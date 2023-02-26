@@ -1,0 +1,22 @@
+.card-holder {
+  background: url("./background-game.png");
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  grid-template-rows: repeat(4, 200px);
+  grid-gap: 40px;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.game-controls {
+  background-color: #123B67;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}

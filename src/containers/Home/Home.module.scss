@@ -1,0 +1,30 @@
+@import "src/scss/abstracts/variables";
+
+.home {
+  background: url("./background-start.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.start-items {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  margin-top: 4rem;
+}
+
+.rules {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  background-color: #FDD72395;
+  padding: 20px;
+  border-radius: 1rem;
+}
+

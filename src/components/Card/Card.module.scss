@@ -1,0 +1,52 @@
+$card-border-radius: 15px;
+$animation-duration: 0.3s;
+$accent-color: red;
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+.card-container, .card, .card .side {
+  width: 100%;
+  height: 100%;
+}
+
+.card-container {
+  cursor: pointer;
+  perspective: 600px;
+}
+
+.card {
+  position: relative;
+  transition: transform .8s, box-shadow $animation-duration, border-color $animation-duration;
+  transform-style: preserve-3d;
+}
+
+
+
+.side {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.front {
+}
+
+.back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card-container:hover .card {
+  .back::after {
+    opacity: .5;
+  }
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}

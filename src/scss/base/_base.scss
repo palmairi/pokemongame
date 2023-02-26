@@ -1,0 +1,25 @@
+@import "src/scss/abstracts/variables";
+
+* {
+  box-sizing: border-box;
+  font-family: 'Bangers', sans-serif;
+  -font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+  margin: 0;
+  color: $default-text-color;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+select {
+  border: 15px solid $brand-secondary-color;
+  padding: 8px 0;
+  background-color: $brand-secondary-color;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
